@@ -1,0 +1,297 @@
+* {
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+body {
+    min-height: 100vh;
+    background-color:rgb(36, 37, 42);
+    background-size: cover;
+    background-position: center;
+}
+.header {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 30px 100px;
+    background: #24252A;
+    border-bottom: 0.1px solid grey;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    z-index: 100;
+}
+
+.logo {
+    font-size: 32px;
+    color: rgba(245, 245, 245, 0.9);
+    text-decoration: none;
+    font-weight: 700;
+}
+.logo:hover {
+    background-color: rgba(255, 255, 255,0.1);
+    opacity: 0.7;
+    transition: 0.7s ease;
+    padding: 5px; 
+    border-radius: 100px
+}
+.navbar a{
+position: relative;
+font-size: 21px;
+color: rgba(245, 245, 245, 0.9);
+font-weight: 500;
+text-decoration: none;
+margin-left: 35px;
+}
+
+.navbar a::before {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: white;
+    transition:  .3s;
+}
+.navbar a:hover::before {
+    width: 100%;
+}
+.navbar img {
+    height: 22px;
+    width: 22px;
+}
+main {
+    color: rgba(245, 245, 245, 0.9);
+}
+.container {
+    display: grid;
+    background-color: #24252A;
+    height: 100vh;
+    word-wrap: break-word;
+    grid-template-columns: 12.5% 15% 40% 20% 12.5%;
+}
+.editarea {
+    display: block;
+    width: 30%;
+    height: 10vw;
+    border-radius: 10px;
+    background-color:black;
+    font-size: 18px;
+    color: whitesmoke;
+    resize: none;
+    margin: 0 auto;
+    padding: 7px ;
+}   
+.savebutton  {
+    display: block;
+    margin: 10px auto;
+    width: 5%;
+}
+
+        /* -----LINKE SEITE----- */
+.navbarleft li {
+    font-size: 24px;
+    padding-top: 1.8rem;
+    list-style: none;
+}
+.navbarleft li:first-child {
+    margin-top: 20px;
+}
+.navbarleft a {
+    display: flex;
+    width: fit-content;
+    text-decoration: none;
+    color: rgba(245, 245, 245, 0.9) ;
+    border-radius: 1000px;
+    background-color: #24252A;
+}
+.navbarleft a:hover {
+    background-color: grey;
+    opacity: 0.7;
+    transition: 0.7s ease;
+    padding: 10px;
+}
+.navbarleft img {
+    height: 26.5px;
+    margin-right:15px;    
+}
+
+
+           /* -----MITTE------  */
+
+.mainbar    {
+    border-left: 0.5px solid grey;
+    border-right: 0.5px solid grey;
+
+}
+.mainbar h1 {
+    margin-top: 20px;
+    text-align: center;
+    padding-bottom: 20px;
+    border-bottom: 1px solid grey;
+}
+
+.mainbar li {
+    list-style-type: none;
+    font-size: 20px;
+    border-bottom: 0.5px grey solid;
+    padding: 0.5rem 1.5rem;
+    color: rgba(255, 255, 255, 0.7); 
+} 
+.postbox {
+    border-bottom: solid 1px grey;
+}
+.postbox textarea {
+    width: 100%;
+    background-color: #24252A;
+    border: none;
+    padding: 10px;
+    resize: none;
+    color: white;
+    font-size: 20px;
+    border: none;
+    overflow: auto;
+    outline: none;
+}
+ .submitpost {
+    background: rgba(9, 208, 222, 0.9);
+    color: white;
+    border: none;
+    border-radius: 100px;
+    width: 2.5vw;
+    height: 25px;
+    position: relative;
+    right: -90%;  
+    margin-bottom: 10px;
+}
+.submitpost:hover {
+    background: rgba(9, 208, 222, 0.5);
+    cursor: pointer;
+}
+.btn {
+    width: 100%;
+    height: 20px;
+}
+.postbuttons {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 10px;
+    margin-right: 5px;
+}
+ .editpost {
+    background: rgba(9, 208, 222, 0.9);
+    color: white;
+    border: none;
+    border-radius: 100px;
+    width: 2.5vw;
+    height: 1.2vw;
+    margin-left: 10px;
+}
+.editpost:hover {
+    background: rgba(9, 208, 222, 0.5);
+    cursor: pointer;
+}
+ .deletepost {
+    background: rgba(222, 34, 9, 0.9);
+    color: white;
+    border: none;
+    border-radius: 100px;
+    width: 2.5vw;
+    height: 1.2vw;
+    margin-left: 10px;
+}
+.deletepost:hover {
+    background: rgba(222, 34, 9, 0.7);
+    cursor: pointer;
+}
+.profilebar    {
+    border-left: 0.5px solid grey;
+    border-right: 0.5px solid grey;
+
+}
+.profilebar h1 {
+    margin-top: 20px;
+    text-align: center;
+    padding-bottom: 20px;
+    border-bottom: 1px solid grey;
+}
+
+.profilebar li {
+    list-style-type: none;
+    font-size: 20px;
+    padding: 0.5rem 1.5rem;
+    color: rgba(255, 255, 255, 0.7); 
+} 
+.postcontainer {
+    display: flexbox; 
+    flex-direction: column;    
+    border-bottom: 0.5px grey solid;
+    width: 100%;
+}   
+.postcontainer p {
+text-align: left;
+font-size: 22px; 
+padding: 1rem 1rem 0.1rem 1rem;
+font-weight: 800;
+}   
+
+.gamecontainer {
+    display: flex;
+    justify-content: space-evenly;
+}
+.gamelink {
+    display: flex;
+    flex-direction: column; /* Arrange img and h2 in a column */
+    justify-content: center; /* Center content vertically */
+    align-items: center; /* Center content horizontally */
+    text-align: center; /* Center text within the h2 */
+    margin: 10px; 
+}
+.gamecontainer a {
+    border: 0.5px solid white;
+    height: 200px;
+    width: 220px;
+    text-decoration: none;
+}
+.gamecontainer .gamelink img {
+    height: 64px;
+    width: 64px;
+
+}
+.gamecontainer .gamelink h2 {
+    color: white;
+    margin: 0;
+}
+
+        /* -----RECHTE SEITE----- */
+.navbarright {
+    background: rgba(36, 37, 42,0.1);
+}
+.navbarright li,h2 {
+    margin-left: 2rem;
+    padding-top: 1rem;
+    font-size: 20px;
+    list-style: none;
+}
+
+.navbarright li:hover {
+    display: inline-flex;
+    background-color: grey;
+    border-radius: 200px;
+    transition: 0.6s ease;
+    padding: 13px;
+}
+.navbarright li:first-of-type {
+    margin-top: 20px;
+}
+.navbarright h2 {
+    font-size: 28px;
+    border-bottom: 0.5px solid grey;
+}
+.navbarright a {
+    text-decoration: none;
+    color: white;
+}
