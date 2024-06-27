@@ -301,6 +301,8 @@ font-weight: 800;
     display: flex;
     justify-content: center;
     align-items: center;
+    border-bottom: 0.5px solid grey;
+    padding-bottom: 2rem;
 }
 .contactTextarea {
     display: flex;
@@ -320,7 +322,6 @@ input:focus, textarea {
     color: whitesmoke;
     margin-top: 1.8rem;
 }
-
         /* -----RECHTE SEITE----- */
 .navbarright {
     background: rgba(36, 37, 42,0.1);

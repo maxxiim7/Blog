@@ -15,8 +15,8 @@
             <?php include "partials/empty.php" ?>
             <?php include "partials/navbarleft.php" ?>
             <div class="mainbar">
-                <h1>Contact Us !</h1>
-                <form action="" method="POST">
+                <h1 class="contacth1">Contact Us !</h1>
+                <form action="sendEmail.php" method="POST">
                     <div class="contactContainer">
                         <input class="userData" type="text" name="name" placeholder="Name" required>
                         <input class="userData" type="text" name="surname" placeholder="Surname" required>
@@ -31,6 +31,7 @@
                     <div class="centerBtnx">
                         <input class="submitBtn" type="submit" value="Submit">
                     </div>
+
                 </form>
             </div>
             <div class="navbarright">
@@ -39,7 +40,6 @@
         </div>
     <script> 
         const textarea = document.getElementById('auto-resize');
-
         textarea.addEventListener('input', autoResize);
 
         function autoResize() {
