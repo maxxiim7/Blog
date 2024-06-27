@@ -12,10 +12,10 @@ if (isset($_SESSION["username"])) {
     $query->execute([$username]);
     $titles = $query->fetchAll();
         foreach ($titles as $title ) {
-            echo "<div class='postcontainer'>" . "<p>". $username . "</p>" . "<li>" . $title["title"] . "</li>";
+            echo "<div class='postcontainer'>" . "<p>". $username . "</p>" . "<li class ='userPost'>" . $title["title"] . "</li>";
         ?>
             <div class='postbuttons'>
-                    <form class="myForm" action="" method="post"> <!-- Bei action kommt editpost.php rein!  -->
+                    <form class="myForm" action="editpost.php" method="post"> <!-- Bei action kommt editpost.php rein!  -->
                     <textarea class="editarea" style="display: none;  name="text"> <?= $title["title"] ?> </textarea>
                     <input type="hidden" name="post_id" value="<?= $title["id"] ?>"/>
                     <input class="editpost" type="submit" value="Edit" id="edit-<?= $title["id"] ?>"/>
@@ -36,7 +36,7 @@ if (isset($_SESSION["username"])) {
                 <title>Document</title>
             </head>
             <body>
-                <script src="script.js"> </script>
+
             </body>
             </html>';
     }

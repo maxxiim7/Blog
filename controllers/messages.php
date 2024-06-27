@@ -1,4 +1,4 @@
 <?php
-$heading = "Games";
+$heading = "Messages";
 
 require "views/messages.view.php";

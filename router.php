@@ -5,11 +5,12 @@
 
 $routes = [
     "/" => "controllers/index.php",
-    "/explore" => "controllers/explore.php",
+    "/game" => "controllers/game.php",
     "/messages" => "controllers/messages.php",
     "/profile" => "controllers/profile.php",
     "/logIn" => "controllers/logIn.php",
     "/signUp" => "controllers/signUp.php",
+    "/contact" => "controllers/contact.php"
 ];
 
 

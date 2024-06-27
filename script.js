@@ -1,21 +1,21 @@
 var editButtons = document.getElementsByClassName("editpost");
 var form = document.getElementsByClassName("myForm");
-var textarea = document.getElementsByClassName("editarea")
-
+var textarea = document.getElementsByClassName("editarea");
+var userPosts = document.getElementsByClassName("userPost");
 
 for (var i = 0; i < editButtons.length; i++) {
     let x = editButtons[i].form.querySelector("textarea"); // mit .form springt man nach oben zu <form> und mit querySelector wählt man dann das erste textarea element in der form aus 
 
     editButtons[i].addEventListener("click", function (event) {
         changeValue(event, x)
-    });
+    
+    });   
 }
- 
-
+console.log(userPosts);
 function changeValue(event, x) {
     event.target.value = "Save";
     x.style.display ="flex";
-    x.style.width ="100%"
+    x.style.width ="100%";
 }
 
 for (var i = 0; i < form.length; i++) {

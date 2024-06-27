@@ -17,10 +17,14 @@
         <div class="mainbar">
             <div class="postbox">
               <?php if(isset($_SESSION["username"])) 
-                {echo  '<form action="../createpost.php" method="post">
+                {echo  '<form action="../createpost.php" method="post" enctype="multipart/form-data">
                 <label for="text"></label>
                 <textarea id="text" name="text" rows="3" placeholder="Say something..."></textarea> 	
-                <input class="submitpost" type="submit" value="Post" /> </form>';}
+                <input class="submitpost" type="submit" value="Post" /> </form> 
+                <form action="../uploadImage.php" method="POST" enctype="multipart/form-data">
+                <label for="imgUpload">Choose an Image to upload:</label><br>
+                <input type="file" class="imgUpload" name="userImage"
+                <input type="submit" value="Upload Image">';}
                 ?>
             </div>
 
