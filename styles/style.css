@@ -322,7 +322,24 @@ input:focus, textarea {
     color: whitesmoke;
     margin-top: 1.8rem;
 }
-        /* -----RECHTE SEITE----- */
+input[type="file"] {
+    display: none;
+  }
+.imgUpload {    
+    cursor: pointer;
+    padding-left: 14px;
+}
+
+.uploadPicture {
+    height: 25px;
+    width: 25px;
+    opacity: 0.6;
+    margin: -10px;
+}
+
+
+
+/* -----RECHTE SEITE----- */
 .navbarright {
     background: rgba(36, 37, 42,0.1);
 }

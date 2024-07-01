@@ -22,5 +22,3 @@ $userindex = array_search($post["user_id"], array_column($users, "id"));
 echo "<p>" .$users[$userindex]["username"]. "</p>". "<li>" . $post["title"]. "</li>";               
 }
     echo "</div>";                        
-
-

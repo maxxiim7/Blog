@@ -18,13 +18,11 @@
             <div class="postbox">
               <?php if(isset($_SESSION["username"])) 
                 {echo  '<form action="../createpost.php" method="post" enctype="multipart/form-data">
-                <label for="text"></label>
                 <textarea id="text" name="text" rows="3" placeholder="Say something..."></textarea> 	
-                <input class="submitpost" type="submit" value="Post" /> </form> 
-                <form action="../uploadImage.php" method="POST" enctype="multipart/form-data">
-                <label for="imgUpload">Choose an Image to upload:</label><br>
-                <input type="file" class="imgUpload" name="userImage"
-                <input type="submit" value="Upload Image">';}
+                <label for="file-upload" class="imgUpload"><img class="uploadPicture" src="img/picUpload.png" alt="uploadpic"></label>
+                <input  type="file" id="file-upload" name="userImage">
+                <input class="submitpost" type="submit" value="Post" /> </form>'
+                ;}
                 ?>
             </div>
 
